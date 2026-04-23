@@ -11,7 +11,9 @@ Database Design and Normalization
 To ensure data integrity, eliminate redundancy, and optimize query performance, the proposed database was normalized up to Third Normal Form (3NF).
 
 •	**First Normal Form (1NF)**: All attributes were reduced to atomic values. For example, the client requirement of “Full Name” was separated into FirstName, MiddleName, and LastName. Furthermore, to prevent multi-valued or comma-separated strings, customer addresses were removed from a single text line and structured logically into a separate entity.
+
 •	**Second Normal Form (2NF)**: The database utilizes surrogate primary keys (e.g., CustomerID, AccountID, TransactionID) with IDENTITY properties across all tables. This ensures that every non-key attribute is fully functionally dependent on the primary key, rather than relying on natural keys like Usernames, which could conceptually change.
+
 •	**Third Normal Form (3NF)**: All transitive dependencies were removed. Two major architectural decisions highlight this:
 1.	Addresses: Storing elements like City and PostalCode within the Customers table creates a transitive dependency. By creating a dedicated Addresses table linked via an AddressID foreign key, this violation is resolved while allowing multiple customers to share a single residence without data duplication.
 2.	Overdue Fees: Rather than linking OverdueFees to the Accounts table, it is linked directly to the Transactions table via TransactionID. Linking to the account would create a transitive dependency and lose the granular context of which specific scheduled payment was missed. Linking to the transaction ensures precise calculation of days overdue. Additionally, the OutstandingBalance is implemented as a computed column (TotalOwed – TotalRepaid) rather than a static field to permanently prevent update anomalies.
