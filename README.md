@@ -6,7 +6,7 @@ A major challenge in the banking industry is the rapid transition to digital ban
 
 This project builds on a client’s provided specifications and aims to design a robust relational database for an online banking platform. The primary objective is to accurately manage customer profiles, diverse financial products, and daily transactions while establishing automated logic to flag and track overdue fees to reduce the platform’s financial risk. The report details the methodology and processes carried out using Microsoft SQL Server Management Studio (SSMS) to write the T-SQL statements that construct the system.
 
-### Part 1
+## Part 1
 Database Design and Normalization
 To ensure data integrity, eliminate redundancy, and optimize query performance, the proposed database was normalized up to Third Normal Form (3NF).
 
