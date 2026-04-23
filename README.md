@@ -1,7 +1,7 @@
 # FinTech-Database-Architecture
 sql-banking-database
 
-Introduction
+## Introduction
 A major challenge in the banking industry is the rapid transition to digital banking. With the volume of online transactions increasing by the day, it becomes more difficult to manage financial discrepancies, data breaches, and system downtime, making robust database architectures a priority for operational stability and regulatory compliance. While user interfaces are widely seen as the main driver of customer satisfaction in banking applications, practice demonstrates that a secure financial experience is built on ACID principles (Atomicity, Consistency, Isolation, and Durability), a set of database properties that guarantee reliable transaction processing, ensuring data integrity even during system failures. 
 
 This project builds on a client’s provided specifications and aims to design a robust relational database for an online banking platform. The primary objective is to accurately manage customer profiles, diverse financial products, and daily transactions while establishing automated logic to flag and track overdue fees to reduce the platform’s financial risk. The report details the methodology and processes carried out using Microsoft SQL Server Management Studio (SSMS) to write the T-SQL statements that construct the system.
