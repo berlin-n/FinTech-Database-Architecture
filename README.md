@@ -34,7 +34,7 @@ To ensure data integrity, eliminate redundancy, and optimize query performance, 
 Below is the Entity Relationship Diagram (ERD) illustrating the 3NF schema, primary keys (PK), foreign keys (FK), and the relationship between the entities.
 
 
-Database Population and Data Manipulation (DML)
+### Database Population and Data Manipulation (DML) 
 Following the establishment of the normalized schema, and the design of the database, the next step was populating the database with synthetic data using INSERT statements.
 To satisfy the established foreign key constraints, the INSERT statements were written and executed in respect to the parent and child tables. Parent entities such as the Addresses table were populated prior to its dependent child entity Customers.
 
