@@ -30,7 +30,7 @@ To ensure data integrity, eliminate redundancy, and optimize query performance, 
 •	**Repayments**: The Repayments table is designed to record and track individual payments made by customers to clear their penalty charges. It operates on a one-to-many relationship with the OverdueFees table, allowing a single fee to be paid off across multiple transactions without duplication. Each record logs the specific payment amount, the method used, controlled with a CHECK constraint, and the timestamp of the transaction.
 
 ### Database Diagram
-![ Alt text](image_url)
+![ Alt text](/Users/efe/Desktop/Picture_1.png)
 Below is the Entity Relationship Diagram (ERD) illustrating the 3NF schema, primary keys (PK), foreign keys (FK), and the relationship between the entities.
 
 
