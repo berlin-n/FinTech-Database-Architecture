@@ -1,5 +1,4 @@
 # FinTech-Database-Architecture
-sql-banking-database
 
 ## Introduction
 A major challenge in the banking industry is the rapid transition to digital banking. With the volume of online transactions increasing by the day, it becomes more difficult to manage financial discrepancies, data breaches, and system downtime, making robust database architectures a priority for operational stability and regulatory compliance. While user interfaces are widely seen as the main driver of customer satisfaction in banking applications, practice demonstrates that a secure financial experience is built on ACID principles (Atomicity, Consistency, Isolation, and Durability), a set of database properties that guarantee reliable transaction processing, ensuring data integrity even during system failures. 
