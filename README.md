@@ -49,7 +49,7 @@ Next, we populate the transactions table to simulate 3 different scenarios to sa
 We populate the Overduefees table to also meet the requirements of some customers that haven’t paid more than 50% of their overdue fees. We have also employed a logic on the calculation of the overdue fees for customer. The bank will charge a flat fee of 2.50 per day after the due date, until the customer makes a full repayment.
 
 ## Part 2
-###Search Accounts by Name
+### Search Accounts by Name
 To fulfil the requirement of searching bank accounts by name, a stored procedure (sp_SearchAccountsByName) was created. The stored procedure selects AccountID, CustomerID, AccountName, AccountType, AccountStatus, OpeningDate, ReferenceDate from the Accounts table. The main functionality used to retrieve account names is the LIKE operator paired with the wildcard character (%). A variable @SearchTerm was declared to allow users pass input to the function, which is matched with account names that have that term, and the selected rows of the account are returned. The results are ordered using ORDER BY OpeningDate DESC to satisfy the business rule of showing the most recently opened accounts first.
 
 To execute the procedure, we write a query with the EXEC function, the name of the procedure, and the name we’re looking for. Let’s search for any account name that has ‘Checking’ in it.
